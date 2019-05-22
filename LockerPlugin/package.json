@@ -1,0 +1,31 @@
+{
+  "name": "testplugin",
+  "version": "1.0.0",
+  "description": "This is for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Siddharth Brar",
+  "license": "ISC",
+  "cordova": {
+    "id": "cordova-plugin-testplugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddharth-Iotasol/TestPlugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "bugs": {
+    "url": "https://github.com/Siddharth-Iotasol/TestPlugin/issues"
+  },
+  "homepage": "https://github.com/Siddharth-Iotasol/TestPlugin#readme"
+}

@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Probe Test App
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content text-center padding style="overflow-y:scroll">
+    <button ion-button full (click)="isBluetoothEnabled()">Is bluetooth Enabled</button>
+    <button ion-button full (click)="getBatteryLevel()">get Battery Level</button>
+    <button ion-button full (click)="getHardwareRevision()">get Hardware Revision</button>
+    <button ion-button full (click)="getFirmwareRevision()">get Firmware Revision</button>
+    <button ion-button full (click)="getModelNumber()">get Model Number</button>
+    <button ion-button full (click)="getSerialNumber()">get Serial Number</button>
+    <button ion-button full (click)="startScan()">start Scan</button>
+    <button ion-button full (click)="stopScan()">stop Scan</button>
+    <button ion-button full (click)="setDataPath()">set Data Path</button>
+    <button ion-button full (click)="setAppRevision()">set App Revision</button>
+    <button ion-button full (click)="isScanning()">is Scanning</button>
+    <button ion-button full (click)="isConnected()">is Connected</button>
+    <button ion-button full (click)="getNewProbeFileFlag()">get New Probe File Flag</button>
+    <button ion-button full (click)="clearNewProbeFileFlag()">clear New Probe File Flag</button>
+    <button ion-button full (click)="setNotification()">set Notification</button>
+    <button ion-button full (click)="getState()">get State</button>
+    <button ion-button full (click)="getLoadProgress()">get Load Progress</button>
+    <button ion-button full (click)="startMeasurement()">start Measurement</button>
+    <button ion-button full (click)="getProcessingAlgorithm()">get Processing Algorithm</button>
+    <button ion-button full (click)="stopMeasurement()">stop Measurement</button>
+    <button ion-button full (click)="setProcessingAlgorithm()">set Processing Algorithm</button>
+    <button ion-button full (click)="getMeasurementPointsPerMilliMeter()">get Measurement Points Per MilliMeter</button>
+    <button ion-button full (click)="setMeasurementPointsPerMilliMeter()">set Measurement Points Per MilliMeter</button>
+    <button ion-button full (click)="clearGpsLocation()">clear GpsLocation</button>
+    <button ion-button full (click)="updateGpsLocation()">update GpsLocation</button>
+    <button ion-button full (click)="reset()">reset</button>
+    <button ion-button full (click)="flushBleLog()">flush Ble Log</button>
+</ion-content>
+<ion-footer>
+</ion-footer>

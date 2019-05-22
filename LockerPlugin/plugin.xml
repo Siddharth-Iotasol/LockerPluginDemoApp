@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-testplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>TestPlugin</name>
+    <js-module name="TestPlugin" src="www/TestPlugin.js">
+        <clobbers target="TestPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="TestPlugin">
+                <param name="android-package" value="cordova.plugin.testplugin.TestPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/TestPlugin.java" target-dir="src/cordova/plugin/testplugin/TestPlugin" />
+        <source-file src="src/android/oldapp_rad_app_javafiles_RadBleInterface.java" target-dir="src/cordova/plugin/testplugin/TestPlugin" />
+        <lib-file src="src/android/ble.jar" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="TestPlugin">
+                <param name="ios-package" value="TestPlugin" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/TestPlugin.h" />
+        <source-file src="src/ios/TestPlugin.m" />
+        <source-file src="src/ios/SupportedFiles/PublicSet.h" />
+        <source-file src="src/ios/SupportedFiles/BLEFramework/BleAPI.h" />
+        <source-file src="src/ios/SupportedFiles/BLEFramework/BleAPI.m" />
+        <source-file src="src/ios/SupportedFiles/Plist/NSObject+plistEx.h" />
+        <source-file src="src/ios/SupportedFiles/Plist/NSObject+plistEx.m" />
+        <source-file src="src/ios/SupportedFiles/tinyAES128/aes.c" />
+        <source-file src="src/ios/SupportedFiles/tinyAES128/aes.h" />
+        <source-file src="src/ios/SupportedFiles/tinyAES128/test.c" />
+    </platform>
+</plugin>
