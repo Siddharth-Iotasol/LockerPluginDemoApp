@@ -1883,4 +1883,21 @@ public class RadBleInterface {
         descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
         return syncWriteDescriptor(descriptor);
     }
+
+    /**
+     * Show Alert function
+     * Function Call
+     * this.showAlert(" closeLock success ", callbackContext)
+     */
+    private void showAlert(String message, CallbackContext callbackContext) {
+		if (callbackContext == null) {
+			return;
+		}
+
+		if (message != null && message.length() > 0) {
+			callbackContext.success(message);
+		} else {
+			callbackContext.error("Empty string !");
+		}
+	}
 }
