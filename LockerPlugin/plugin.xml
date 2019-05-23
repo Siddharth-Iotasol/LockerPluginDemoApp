@@ -12,7 +12,7 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml" />
         <source-file src="src/android/TestPlugin.java" target-dir="src/cordova/plugin/testplugin/TestPlugin" />
-        <source-file src="src/android/oldapp_rad_app_javafiles_RadBleInterface.java" target-dir="src/cordova/plugin/testplugin/TestPlugin" />
+        <source-file src="src/android/RadBleInterface.java" target-dir="src/cordova/plugin/testplugin/TestPlugin" />
         <lib-file src="src/android/ble.jar" />
     </platform>
     <platform name="ios">

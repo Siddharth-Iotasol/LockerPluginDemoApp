@@ -1,4 +1,4 @@
-package org.radapp;
+package cordova.plugin.testplugin;
 
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
