@@ -359,10 +359,14 @@ public class RadBleInterface {
      * @return True if bluetooth is enabled, otherwise false.
      */
     public boolean isBluetoothEnabled() {
+        Log.i(RAD_BLE_API, "=====Start isBluetoothEnabled=====");
         boolean enabled = btAdapter.isEnabled();
         if (enabled == false) {
             setState(RAD_STATE_DISCONNECTED);
         }
+        // this.showAlert(enabled, callbackContext);
+        Log.i(RAD_BLE_API, enabled);
+        Log.i(RAD_BLE_API, "=====End isBluetoothEnabled=====");
         return enabled;
     }
 
